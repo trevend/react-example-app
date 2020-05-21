@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  Provider,
+  useProduct,
+} from '@trevend/kit'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider apiKey={process.env.REACT_APP_TREVEND_API_KEY}>
+      <div>
+        <h2>My first Trevend product 🚀</h2>
+        <Product />
+      </div>
+    </Provider>
   );
+}
+
+function Product() {
+  const product = useProduct('ADD_YOUR_PRODUCT_ID_HERE');
+  return JSON.stringify(product);
 }
 
 export default App;
