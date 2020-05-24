@@ -67,7 +67,6 @@ function Product() {
           <div className="col">
             <div className="description_title_container">
               <div className="description_title">Description</div>
-              <div className="reviews_title"><a href="#">Reviews <span>(1)</span></a></div>
             </div>
             <div className="description_text">
               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Phasellus id nisi quis justo tempus mollis sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet elit. Mauris consequat nisi ut mauris efficitur lacinia.</p>

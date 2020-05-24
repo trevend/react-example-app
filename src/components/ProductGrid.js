@@ -2,7 +2,6 @@ import React from 'react';
 import './ProductGrid.sass';
 import {
   useProducts,
-  BuyButton,
 } from '@trevend/kit'
 import {
   Link,

@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Provider,
-  useProduct,
 } from '@trevend/kit'
 import {
   BrowserRouter as Router,

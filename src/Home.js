@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+  Link,
+} from "react-router-dom";
 import Hero from './components/Hero';
 import Navigation from './components/Navigation';
 import ProductGrid from './components/ProductGrid';
@@ -84,18 +87,10 @@ function Home() {
         <div className="row">
           <div className="col">
             <div className="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-              <div className="footer_logo"><a href="#">Sublime.</a></div>
+              <div className="footer_logo"><Link to="/">Sublime.</Link></div>
               <div className="copyright ml-auto mr-auto">{/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-                Copyright © All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                Copyright © All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true" /> by <a href="https://colorlib.com" rel="noopener noreferrer" target="_blank">Colorlib</a>
                 {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}</div>
-              <div className="footer_social ml-lg-auto">
-                <ul>
-                  <li><a href="#"><i className="fa fa-pinterest" aria-hidden="true" /></a></li>
-                  <li><a href="#"><i className="fa fa-instagram" aria-hidden="true" /></a></li>
-                  <li><a href="#"><i className="fa fa-facebook" aria-hidden="true" /></a></li>
-                  <li><a href="#"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
