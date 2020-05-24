@@ -3,21 +3,14 @@ import {
   Provider,
   useProduct,
 } from '@trevend/kit'
+import Home from './Home';
 
 function App() {
   return (
     <Provider apiKey={process.env.REACT_APP_TREVEND_API_KEY}>
-      <div>
-        <h2>My first Trevend product 🚀</h2>
-        <Product />
-      </div>
+      <Home />
     </Provider>
   );
-}
-
-function Product() {
-  const product = useProduct('ADD_YOUR_PRODUCT_ID_HERE');
-  return JSON.stringify(product);
 }
 
 export default App;
