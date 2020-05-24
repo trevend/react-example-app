@@ -162,10 +162,6 @@
 		height: 490px;
 		margin-top: 30px;
 	}
-	.product
-	{
-		width: calc((100% - 30px) / 2);
-	}
 	.icon_box_col:not(:last-child)
 	{
 		margin-bottom: 60px;
@@ -348,10 +344,6 @@
 	.avds_text
 	{
 		font-size: 13px;
-	}
-	.product
-	{
-		width: 100%;
 	}
 	.avds_large_content
 	{
