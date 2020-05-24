@@ -2,8 +2,19 @@ import React from 'react';
 import {
   Link,
 } from "react-router-dom";
+import {
+  useCart,
+} from '@trevend/kit'
 
 function Navigation() {
+  const cart = useCart();
+
+  if (!cart.id) {
+    return '';
+  }
+
+  console.log(cart)
+
   return <div className="header_content d-flex flex-row align-items-center justify-content-start">
     <div className="logo"><Link to="/">Sublime.</Link></div>
     <nav className="main_nav">
@@ -25,7 +36,7 @@ function Navigation() {
     </nav>
     <div className="header_extra ml-auto">
       <div className="shopping_cart">
-        <a href="cart.html">
+        <a href={cart.url}>
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 489 489" style={{enableBackground: 'new 0 0 489 489'}} xmlSpace="preserve">
             <g>
               <path d="M440.1,422.7l-28-315.3c-0.6-7-6.5-12.3-13.4-12.3h-57.6C340.3,42.5,297.3,0,244.5,0s-95.8,42.5-96.6,95.1H90.3
@@ -35,7 +46,7 @@ function Navigation() {
                 c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z" />
             </g>
           </svg>
-          <div>Cart <span>(0)</span></div>
+          <div>Cart <span>({cart.products.length})</span></div>
         </a>
       </div>
       <div className="hamburger"><i className="fa fa-bars" aria-hidden="true" /></div>
