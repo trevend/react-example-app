@@ -4,6 +4,9 @@ import {
   useProducts,
   BuyButton,
 } from '@trevend/kit'
+import {
+  Link,
+} from "react-router-dom";
 
 function ProductGrid({ categoryName }) {
   const { loading, products } = useProducts({ categoryName })
@@ -36,7 +39,7 @@ function ProductItem({ item }) {
       { /* <div className="product_extra product_new"><a href="categories.html">NEW</a></div> */ }
       { /* <div className="product_extra product_hot"><a href="categories.html">HOT</a></div> */ }
       <div className="product_content">
-        <div className="product_title"><a href={`products/${item.id}`}>{item.title}</a></div>
+        <div className="product_title"><Link to={`products/${item.id}`}>{item.title}</Link></div>
         <div className="product_price">{item.price}</div>
       </div>
     </div>

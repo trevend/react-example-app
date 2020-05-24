@@ -1,8 +1,11 @@
 import React from 'react';
+import {
+  Link,
+} from "react-router-dom";
 
 function Navigation() {
   return <div className="header_content d-flex flex-row align-items-center justify-content-start">
-    <div className="logo"><a href="#">Sublime.</a></div>
+    <div className="logo"><Link to="/">Sublime.</Link></div>
     <nav className="main_nav">
       <ul>
         {/*<li className="active">
