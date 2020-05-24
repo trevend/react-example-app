@@ -16,7 +16,7 @@ function Navigation() {
   console.log(cart)
 
   return <div className="header_content d-flex flex-row align-items-center justify-content-start">
-    <div className="logo"><Link to="/">Sublime.</Link></div>
+    <div className="logo"><Link to="/">Trevend example app.</Link></div>
     <nav className="main_nav">
       <ul>
         {/*<li className="active">
