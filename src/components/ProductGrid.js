@@ -21,6 +21,14 @@ function ProductGrid({ categoryName }) {
     />
   });
 
+  if (items.length === 0) {
+    return <div className="ProductGridComponent">
+      <p style={{textAlign: 'center', fontSize: "24px", paddingBottom: "40px"}}>
+        Please create minimum one product and assign it to a category called 'home'.
+      </p>
+    </div>
+  }
+
   return <div className="ProductGridComponent">
     <div className="container">
       <div className="row">
