@@ -1,3 +1,6 @@
+## Demo
+We host a demo of the latest master at [https://demo.trevend.com](https://demo.trevend.com)
+
 ## Get started
 This app is a starting point to setup your own trevend project. Before you start you need to create a trevend account at [Trevend.com](https://trevend.com)
 
