@@ -24,7 +24,7 @@ function Home() {
       <Hero />
     </div>
     {/* Products */}
-    <ProductGrid />
+    <ProductGrid categoryName="home-main"/>
     {/* Ad */}
     <div className="avds_xl">
       <div className="container">
