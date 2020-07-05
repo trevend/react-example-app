@@ -15,7 +15,7 @@ import Product from './Product';
 function App() {
   return (
     <Router>
-      <Provider apiKey={process.env.REACT_APP_TREVEND_API_KEY}>
+      <Provider apiKey={process.env.REACT_APP_TREVEND_API_KEY} apiHost={process.env.REACT_APP_TREVEND_HOST}>
           <Switch>
             <Route path="/products/:id">
               <Product />
